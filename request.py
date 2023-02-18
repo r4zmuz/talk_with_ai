@@ -7,7 +7,7 @@ openai.Model.list()
 
 
 def make_request(prompt):
-    response = openai.Completion.create(model="text-davinci-003", prompt=prompt, max_tokens=1000, temperature=0)
-    print("Request successful \n")
+    response = openai.Completion.create(model="text-davinci-003", prompt=prompt, max_tokens=2000, temperature=0)
     print(response["choices"][0]["text"])
+    return response["choices"][0]["text"]
 

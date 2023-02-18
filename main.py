@@ -1,6 +1,6 @@
 from request import make_request
 from edit_request import edit_request
-
+from text_to_speech import text_to_speech
 
 def main():
     print("|---------------------------------------------------------------------------------|")
@@ -16,7 +16,7 @@ def main():
             elif user_prompt == "n":
                 user_question = "n"
             else:
-                make_request(user_prompt)
+                text_to_speech(make_request(user_prompt))
         elif user_question == "n":
             input_no = "no"
         elif user_question == "x":
